@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Shane O Donovan">
+    <meta name="keywords" content="software,web,developer,programmer,coder">
+    <meta name="description" content="Learn about what Shane does in his spare time apart from programming and web development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="cit/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic">
+    <title>Hobbies - Shane.pm</title>
+  </head>
+  <body>
+    <header role="banner">
+      <input type="checkbox" id="main-menu-check" class="hidden">
+      <label id="main-menu-btn" aria-hidden="true" class="menu-heading-section" for="main-menu-check" onclick></label>
+      <span id="main-menu-title" class="menu-heading-section">Shane&apos;s Personal Space</span>
+      <div id="main-menu-navigation" class="force-repaint">
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="menu-item-selected">Hobbies</li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <h1>Hobbies</h1>
+      <div class="padded-block">
+        <h2>Television</h2>
+        <div class="padded-block">
+          <p>
+            I tend to watch action and sci-fi series generally. My favourite TV series is Fringe.
+          </p>
+          <p>
+            <a href="http://trakt.tv/users/kenshii" target="_blank">Trakt.tv&nbsp;Profile</a>
+          </p>
+        </div>
+        <h2>Music</h2>
+        <div class="padded-block">
+          <p>
+            My favourite genres are rock and pop. My family and I attend various concerts throughout the year.
+          </p>
+          <p>
+            My favourite artist is Billy Joel.
+          </p>
+        </div>
+        <h2>Uncovering Website Vulnerabilities</h2>
+        <div class="padded-block">
+          <p>
+            I have found and reported multiple vulnerabilities in websites over the last few years.
+          </p>
+          <h3>Dunnes Stores</h3>
+          <div class="padded-block">
+            <p>
+              I noticed the secret key used in Dunnes&apos; Gift Card payment system was being leaked in its gift-card related pages.
+            </p>
+            <p>
+              This secret key would have given people the ability to purchase &euro;100 gift cards for any arbitrary amount of money.
+            </p>
+          </div>
+          <h3>E-xamit</h3>
+          <div class="padded-block">
+            <p>
+              There were multiple SQL injection vulnerabilities on E-xamit's web pages.
+            </p>
+            <p>
+              One such affected page was <a href="http://www.e-xamit.ie/tutorial.php?id=" target="_blank">tutorial.php</a>
+            </p>
+          </div>
+          <h3>Hummingbird</h3>
+          <div class="padded-block">
+            <p>
+              I found a persistent XSS vulnerability on user profile pages, as demonstrated <a href="https://forums.hummingbird.me/t/8584/" target="_blank">here</a>.
+            </p>
+            <p>
+              I also reported accidentally leaked admin access tokens when the website was made open-source.
+            </p>
+          </div>
+          <h3>Groupees</h3>
+          <div class="padded-block">
+            <p>
+              Payment methods were each associated with numbers on Groupees&apos; website.
+            </p>
+            <p>
+              Paying with payment method 0 enabled users to obtain bundles without paying for them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer role="contentinfo">
+      <span>
+        &copy; 2015 - Shane&nbsp;O&nbsp;Donovan - <a href="mailto:kenshii.sod@gmail.com">kenshii.sod@gmail.com</a> - All&nbsp;rights&nbsp;reserved.
+      </span>
+    </footer>
+  </body>
+</html>
