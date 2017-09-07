@@ -55,10 +55,19 @@
           <h3>Dunnes Stores</h3>
           <div class="padded-block">
             <p>
-              I noticed the secret key used in Dunnes&apos; Gift Card payment system was being leaked in its gift-card related pages.
+              The secret key used in Dunnes&apos; Gift Card payment system was being leaked on a certain page.
             </p>
             <p>
               This secret key would have given people the ability to purchase &euro;100 gift cards for any arbitrary amount of money.
+            </p>
+          </div>
+          <h3>BuyGameCredit</h3>
+          <div class="padded-block">
+            <p>
+              I discovered that there was a flaw in the payments system, allowing you to buy any product for any price.
+            </p>
+            <p>
+              One could buy the most expensive item in the store (100 euro) at the price of the cheapest item in the store (5 euro).
             </p>
           </div>
           <h3>E-xamit</h3>
@@ -68,15 +77,6 @@
             </p>
             <p>
               One such affected page was <a href="http://www.e-xamit.ie/tutorial.php?id=" target="_blank">tutorial.php</a>
-            </p>
-          </div>
-          <h3>Hummingbird</h3>
-          <div class="padded-block">
-            <p>
-              I found a persistent XSS vulnerability on user profile pages, as demonstrated <a href="https://forums.hummingbird.me/t/8584/" target="_blank">here</a>.
-            </p>
-            <p>
-              I also reported accidentally leaked admin access tokens when the website was made open-source.
             </p>
           </div>
           <h3>Groupees</h3>
