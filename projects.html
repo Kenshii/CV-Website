@@ -20,7 +20,6 @@
         <nav role="navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
             <li class="menu-item-selected">Projects</li>
           </ul>
         </nav>
@@ -32,22 +31,33 @@
         <h2>Software</h2>
         <div class="padded-block">
           <dl>
-            <dt><strong><a href="https://github.com/Kenshii/CIT-Y1S1-Projects-Finals" target="_blank">2014 &amp; 2015 Semester 1 Projects &amp; Final Exams</a> (Java)</strong></dt>
+            <dt><strong><a href="https://github.com/shanepm/VodafoneIEApp" target="_blank">Mobile IRL – Android App</a> (Java) – 2017</strong></dt>
             <dd>
-              The 2014 project and final exam were not mandatory.<br/>
-              I wrote the code for the 2014 project at the end of September and the 2014 final exam at the start of October.<br/>
-              The 2015 project is most noteworthy as it was written in the form of multiple classes.
+              This is a work-in-progress open-source alternative to the My Vodafone Ireland app.<br/>
+              It communicates with the My Vodafone mobile API via the OkHttp3 and Gson libraries.<br/>
+              A long-term goal is to allow a user to log in from other operators via the same app.
             </dd>
-            <dt><strong><a href="http://github.com/Kenshii/MyDramaList-Scraper-Parser" target="_blank">MyDramaList Scraper &amp; Parser</a> (Python)</strong></dt>
+            <dt><strong>Home Monitoring System – Android App (Java) – 2017</strong></dt>
             <dd>
-              The Hummingbird team requested that I parse some data from MyDramaList, so I developed this to make it more manageable.<br/>
-              It basically involves JSON serialisation and converts the MyDramaList drama pages from HTML to JSON.
+              This is a group project that is being worked on throughout the first semester of third year.<br/>
+              It runs as a service and listens for voice commands constantly. These commands can perform several actions such as taking pictures with the phone’s camera, toggling strips of LED’s on an Arduino and opening a memory-based mini-game in the app.<br/>
+              The app is controllable via both voice commands and a responsive menu.
             </dd>
-            <dt><strong><a href="https://github.com/Kenshii/Leech1s-Bot" target="_blank">Leech1s Bot</a> (Python)</strong></dt>
+            <dt><strong><a href="https://github.com/shanepm/Reverse-Phone-Lookup" target="_blank">Reverse Phone Lookup Tool</a> (Python) – 2014, 2017</strong></dt>
             <dd>
-              A bot that I created that generates <a href="http://leech1s.com/cbox.html" target="_blank">Leech1s</a>
-              premium links automatically for premium users.<br/>
-              I made this because requesting links for a large number of multi-part files and waiting for replies on the chat was time-consuming and tedious.
+              This is a Python script that lets you input an Eircom phone number and obtain the name and address which correspond with that phone number. It matches it against a local database.<br/>
+              To create it, I needed to write a separate script that scraped the entirety of Eircom’s phonebook database. This script involves JSON deserialization, HTML parsing, regular expressions and an ORM.<br/>
+              It was rewritten from scratch in 2017, hence why I chose to show two years above.
+            </dd>
+            <dt><strong><a href="https://github.com/shanepm/CIT-Dentist-Project" target="_blank">CIT Dentist Management App</a> (JavaFX) – 2016 – Result: 90%</strong></dt>
+            <dd>
+              This is a JavaFX application that stores dentistry information in a locally hosted Apache Derby database.<br/>
+              It makes use of the MVC and singleton design patterns, and lets you create, edit and delete dentists and their patients, patients’ invoices, payments and procedures and generate reports detailing them.
+            </dd>
+            <dt><strong><a href="https://github.com/shanepm/500px-Bot" target="_blank">500px Bot</a> (Python) – 2015</strong></dt>
+            <dd>
+              This bot essentially follows users as they post trending images on 500px, and unfollows those users if they unfollow you later or if they do not follow you back within 48 hours.<br/>
+              It is intended to be ran as a daily cronjob, and makes use of the requests and BeautifulSoup libraries.
             </dd>
           </dl>
         </div>
@@ -55,24 +65,23 @@
         <div class="padded-block">
           <p>
             <dl>
-              <dt><strong><a href="https://github.com/Kenshii/CIT-CoderDojo-Project/" target="_blank">CIT CoderDojo Club</a> (HTML, CSS)</strong></dt>
+              <dt><strong><a href="https://github.com/shanepm/CIT-CoderDojo-Project/" target="_blank">CIT CoderDojo Club</a> (HTML, CSS) – 2015 – Result: 98%</strong></dt>
               <dd>
-                A project I made as part of my first semester Web Development Fundamentals module.<br/>
-                I considered accessibility, semantics, and responsiveness while developing it.<br/>
-                The template this webpage was made for the above project.
+                This is a project I made as part of my first semester Web Development Fundamentals module.<br/>
+                I considered accessibility, semantics, and responsiveness while developing it.
               </dd>
-              <dt><strong><a href="http://www.aoifesnotes.com/" target="_blank">Aoife&apos;s Notes Redesign</a> (HTML, CSS)</strong></dt>
+              <dt><strong><a href="http://www.aoifesnotes.com/" target="_blank">Aoife&apos;s Notes Redesign</a> (HTML, CSS) – 2015</strong></dt>
               <dd>
                 Originally, Aoife&apos;s Notes looked like
                 <a href="http://web.archive.org/web/20141219000852/http://www.aoifesnotes.com/" target="_blank">this</a>,
                 but then I re-designed it, as shown in the link above.<br/>
-                The redesign looks great, in my opinion, but in hindsight, it is sorely lacking in terms of accessibility, semantics and responsiveness.
+                Accessibility and responsiveness would need to be addressed later, as I did not address those issues at the time.
               </dd>
-              <dt><strong>BT Young Scientist Personality Test</a> (HTML, PHP)</strong></dt>
+              <dt><strong>BT Young Scientist Personality Test</a> (HTML, PHP) – 2014</strong></dt>
               <dd>
                 A questionnaire website (now defunct) I made for category winning BT Young Scientists in 2014.<br/>
                 See <a href="https://www.facebook.com/1484433901781678/" target="_blank">Facebook page.</a><br/>
-                Submitted questionnaires were sent to a gmail address and then parsed manually, as I had no SQL knowledge at the time.
+                Submitted questionnaires were sent to a Gmail address via the mail() function in PHP and then parsed manually, as I had no SQL knowledge at the time.
               </dd>
             </dl>
         </div>
@@ -80,7 +89,7 @@
     </main>
     <footer role="contentinfo">
       <span>
-        &copy; 2015 - Shane&nbsp;O&nbsp;Donovan - <a href="mailto:kenshii.sod@gmail.com">kenshii.sod@gmail.com</a> - All&nbsp;rights&nbsp;reserved.
+        &copy; 2017 - Shane&nbsp;O&nbsp;Donovan - <a href="mailto:kenshii.sod@gmail.com">kenshii.sod@gmail.com</a> - All&nbsp;rights&nbsp;reserved.
       </span>
     </footer>
   </body>
