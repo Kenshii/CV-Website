@@ -7,12 +7,14 @@
         }
       }}
 
-      window.addEventListener('message', function(e) {
+      function handleMessageFromThirdParty(e) {
         details = JSON.parse(e.data);
         if (details.cmd === 'press-button') {
           buttons[details.buttonId].callback();
         }
-      }, false);
+      }
+      
+      window.addEventListener('message', handleMessageFromThirdParty, false);
 
       function initPlugin() {
         window.parent.postMessage(JSON.stringify({
