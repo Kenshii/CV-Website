@@ -1,6 +1,8 @@
 <html>
   <head>
     <script>
+      pluginId = window.location.hash.substring(1);
+      
       buttons = {'magic-btn': {
         callback: function() {
           document.write('You just pressed a button created on the third-party site by this iframe plugin.');
@@ -18,7 +20,7 @@
 
       function initPlugin() {
         window.parent.postMessage(JSON.stringify({
-          cmd: 'add-button', section: 'section-one', buttonId: 'magic-btn', buttonLabel: 'Button text', pluginId: 'magic-plugin'
+          cmd: 'add-button', section: 'section-one', buttonId: 'magic-btn', buttonLabel: 'Button text', pluginId: pluginId
         }), '*');
       }
       
