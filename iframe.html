@@ -1,7 +1,9 @@
 <html>
   <head>
     <script>
-      window.postMessage('Testing this', '*');
+      setTimeout(function() {
+        window.postMessage('Testing this', '*');
+      }, 5000);
     </script>
   </head>
 </html>
