@@ -2,7 +2,7 @@
   <head>
     <script>
       setTimeout(function() {
-        window.postMessage('Testing this', '*');
+        window.parent.postMessage('Testing this', '*');
       }, 5000);
     </script>
   </head>
