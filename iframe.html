@@ -4,20 +4,20 @@
       var pluginId = window.location.hash.substring(1);
       var buttons = {'magic-btn': {
         callback: function() {
-          document.write('You just pressed a button created on the third-party site by this iframe plugin.');
+          document.write('You just pressed a button created on the '
+                        + 'third-party site by this iframe plugin.');
         }
       }};
-
       function handleMessageFromThirdParty(e) {
         details = JSON.parse(e.data);
         if (details.cmd === 'press-button') {
           buttons[details.buttonId].callback();
         }
       }
-
       function initPlugin() {
         window.parent.postMessage(JSON.stringify({
-          cmd: 'add-button', section: 'section-one', buttonId: 'magic-btn', buttonLabel: 'Button text', pluginId: pluginId
+          cmd: 'add-button', section: 'section-one',
+          buttonId: 'magic-btn', buttonLabel: 'Button text', pluginId: pluginId
         }), '*');
       }
       
