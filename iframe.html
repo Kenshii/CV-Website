@@ -14,11 +14,13 @@
         }
       }, false);
 
-      setTimeout(function() {
+      function initPlugin() {
         window.parent.postMessage(JSON.stringify({
           cmd: 'add-button', section: 'section-one', buttonId: 'magic-btn', buttonLabel: 'Button text'
         }), '*');
-      }, 5000);
+      }
+      
+      initPlugin();
     </script>
   </head>
   <body>
