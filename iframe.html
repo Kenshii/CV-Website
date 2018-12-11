@@ -1,13 +1,12 @@
 <html>
   <head>
     <script>
-      pluginId = window.location.hash.substring(1);
-      
-      buttons = {'magic-btn': {
+      var pluginId = window.location.hash.substring(1);
+      var buttons = {'magic-btn': {
         callback: function() {
           document.write('You just pressed a button created on the third-party site by this iframe plugin.');
         }
-      }}
+      }};
 
       function handleMessageFromThirdParty(e) {
         details = JSON.parse(e.data);
@@ -15,8 +14,6 @@
           buttons[details.buttonId].callback();
         }
       }
-      
-      window.addEventListener('message', handleMessageFromThirdParty, false);
 
       function initPlugin() {
         window.parent.postMessage(JSON.stringify({
@@ -24,6 +21,7 @@
         }), '*');
       }
       
+      window.addEventListener('message', handleMessageFromThirdParty, false);
       initPlugin();
     </script>
   </head>
