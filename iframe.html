@@ -1,8 +1,23 @@
 <html>
   <head>
     <script>
+      buttons = {'magic-btn': {
+        callback: function() {
+          document.write('Pressing the button affected the iframe');
+        }
+      }}
+
+      window.addEventListener('message', function(e) {
+        details = JSON.parse(e.data);
+        if (details.cmd === 'press-button') {
+          buttons[details.buttonId].callback();
+        }
+      }, false);
+
       setTimeout(function() {
-        window.parent.postMessage(JSON.stringify({cmd: 'add-button', section: 'section-one', label: 'Button text'}), '*');
+        window.parent.postMessage(JSON.stringify({
+          cmd: 'add-button', section: 'section-one', buttonId: 'magic-btn', buttonLabel: 'Button text'
+        }), '*');
       }, 5000);
     </script>
   </head>
